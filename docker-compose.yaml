@@ -1,0 +1,21 @@
+services:
+  shuttlelog:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: shuttlelog-dev
+
+    ports:
+      - "3000:3000"
+
+    volumes:
+      - .:/app
+      - shuttlelog_node_modules:/app/node_modules
+
+    environment:
+      NODE_ENV: development
+      WATCHPACK_POLLING: "true"
+
+volumes:
+  shuttlelog_node_modules:
