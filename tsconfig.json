@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "compilerOptions": {
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -32,10 +31,4 @@
     "**/*.mts"
   ],
   "exclude": ["node_modules"]
-=======
-  "extends": "expo/tsconfig.base",
-  "compilerOptions": {
-    "strict": true
-  }
->>>>>>> shuttlelog/master
 }
